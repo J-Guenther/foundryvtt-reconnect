@@ -14,5 +14,6 @@
           "name": "English",
           "path": "lang/en.json"
         }
-    ]
+    ],
+    "download": "https://github.com/J-Guenther/foundryvtt-reconnect/archive/main.zip"
 }
