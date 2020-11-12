@@ -1,14 +1,14 @@
 class Reconnector {
-    static reconnect() {
-        console.log("Clicked reconnect!");
+    static async reconnect() {
+        await game.webrtc.disconnect();
     }
 }
 
 Hooks.on("renderSettings", (app, html) => {
     const buttonTitle = game.i18n.localize("Reconnect.ReconnectButton");
-    const reconnectButton = $('<button>${' + buttonTitle + '}</button>');
+    const reconnectButton = $('<button>' + buttonTitle + '</button>');
     html.find("button[data-action='players']").after(reconnectButton);
-    importButton.click(() => {
-        Reconnector.reconnect;
+    reconnectButton.click(() => {
+        Reconnector.reconnect();
     });
 });

@@ -1,9 +1,9 @@
 {
-    "name": "foundryvtt-av-reconnect",
+    "name": "foundryvtt-reconnect",
     "title": "Webcam - Reconnector",
     "description": "A tool that adds a button to reload your webcam connection in foundry",
     "author": "J-Guenther",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "minimumCoreVersion": "0.7.5",
     "scripts": [
         "scripts/reconnector.js"
