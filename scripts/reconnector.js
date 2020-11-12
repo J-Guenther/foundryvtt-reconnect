@@ -1,6 +1,7 @@
 class Reconnector {
     static async reconnect() {
         await game.webrtc.disconnect();
+        await game.webrtc.connect();
     }
 }
 
